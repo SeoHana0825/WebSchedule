@@ -3,6 +3,11 @@
 일정 등록, 일정 조회 (전체, 단건), 일정 수정, 일정 삭제가 가능한 **일정 관리** Apply 프로그램 개발 프로젝트
 
 ---
+## 스프링 베이직반 과제 (Posteman API 삭제 실행 첨부)
+<img width="741" height="699" alt="image" src="https://github.com/user-attachments/assets/007afd97-1528-4179-be91-1aea16628eb9" />
+
+
+---
 ## 프로젝트 구조 설명
 
 ### 1. API 명세서
