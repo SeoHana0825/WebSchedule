@@ -100,10 +100,10 @@ public class ScheduleService {
         if (!existence) {
             throw new IllegalStateException("존재하지 않는 일정입니다.");
         }
-            // 일정이 존재했을 때
-            scheduleRepository.deleteById(scheduleId);
-
-        }
+        // 일정이 존재했을 때
+        scheduleRepository.deleteById(scheduleId);
 
     }
+
+}
 
