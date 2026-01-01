@@ -4,7 +4,7 @@
 
 ---
 ## 스프링 베이직반 과제 (Posteman API 삭제 실행 첨부)
-<img width="1043" height="824" alt="image" src="https://github.com/user-attachments/assets/0045ac16-ccc1-442d-a515-e12ff3b00a62" />
+![img.png](img.png)
 
 
 
