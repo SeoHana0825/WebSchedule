@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @Entity
-@Table(name = "/schedulers")
+@Table(name = "schedules")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Schedule extends BaseEntity {
 
@@ -23,11 +23,12 @@ public class Schedule extends BaseEntity {
         this.title = title;
         this.text = text;
         this.username = username;
-        this.password = password;
+
     }
 
-    public void update(String text, String username) {
-        this.text = text;
+    public void update(String title, String username, String password) {
+        this.title = title;
         this.username = username;
+        this.password = password;
     }
 }
