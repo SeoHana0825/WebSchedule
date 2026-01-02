@@ -3,24 +3,20 @@
 일정 등록, 일정 조회 (전체, 단건), 일정 수정, 일정 삭제가 가능한 **일정 관리** Apply 프로그램 개발 프로젝트
 
 ---
-## 스프링 베이직반 과제 (Posteman API 삭제 실행 첨부)
-![img.png](img.png)
-
-
-
----
 ## 프로젝트 구조 설명
 
 ### 1. API 명세서
 |   기능    |  Method   | URL                                      | request  | response |
 |:--------:|:---------:|:-----------------------------------------|:---------|:--------------|
-|  일정 등록   |   POST    | /user/scheduler                          |          |               |
-|  일정 조회   |    GET    | /user/scheduler/{schedulerId}/{userName} |          |               |
-| 일정 단건 조회 |    GET   | /user/scheduler/{schedulerId}/{userName} |          |               |
-|  일정 수정   |    PUT    | /user/scheduler/{schedulerId}            |          |               |
-|  일정 삭제   |  DELETE   | /user/scheduler/{schedulerId}            |          |               |
+|  일정 등록   |   POST    | /schedules                         | { <br> "titel" : "1/30 외주 마감", <br> "text" : "14까지 마감필요",<br> "username" : "팀장"<br> } <br>    | {<br>"id" : 346, <br> "titel" : "1/30 외주 마감",<br>  "text" : "14까지 마감필요",<br>  "username" : "팀장",<br> "createdAt" : "2026-01-02T12:51:04.3904935",<br> "updatedAt": "2026-01-02T12:51:04.3904935"<br>}              |
+|  일정 조회   |    GET    | /schedules |                        |  {<br>"id" : 345, <br> "titel" : "1/15 팀 미팅",<br>  "text" : "새해 팀 미팅",<br>  "username" : "대리",<br> "createdAt" : "2026-01-02T11:50:58",<br> "updatedAt": "2026-01-09T11:51:03"<br>}              |
+| 일정 단건 조회 |    GET   | /schedules/{scheduleId}     |          | {<br>"id" : 345, <br> "titel" : "1/15 팀 미팅",<br>  "text" : "새해 팀 미팅",<br>  "username" : "대리",<br> "createdAt" : "2026-01-02T11:50:58",<br> "updatedAt": "2026-01-09T11:51:03"<br>}              |
+|  일정 수정   |    PUT    | /schedules/{scheduleId}     | { <br> "titel" : "시간변경", <br> "text" : "15까지 마감필요",<br> "username" : "팀장"<br> } <br>          |  {<br>"id" : 345, <br> "titel" : "시간변경",<br>  "username" : "팀장"}                |
+|  일정 삭제   |  DELETE   | /schedules/{scheduleId}     |          | 200 OK              |
 
 ### 2. ERD
+<img width="245" height="311" alt="image" src="https://github.com/user-attachments/assets/e39a9612-ee96-42b7-9ee4-da1b34205fdb" />
+
 
 ### 3. 메인 프로젝트 구조
     📁 src/
