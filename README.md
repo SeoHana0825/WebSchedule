@@ -46,18 +46,27 @@
 
 #### ■ Lv.0 : API 명세 및 ERD 작성
 - root (최상위) 경로의 ```README.md``` 에 작성 및 첨부
+  
 #### ■ Lv.1 : 일정 생성
 - 일정 제목, 일정 내용, 작성자명, 비밀번호, 작성/수정일 첨부
 - 단, 작성/수정일은 날짜와 시간을 모두 포함
 - API 응답에 비밀번호 제외
+ <img width="662" height="712" alt="image" src="https://github.com/user-attachments/assets/978240e0-c009-4ae6-bcb2-3b7e43918feb" />
+
 #### ■ Lv.2 : 일정 조회 (전체, 단건)
 - 전체 : 작성자명을 기준으로 등록된 일정 목록 전체 조회
 - 수정일 기준 내림차순 정렬
 - API 응답에 비밀번호 제외
+ <img width="863" height="835" alt="image" src="https://github.com/user-attachments/assets/6c492e7e-0a7b-4eb7-9d07-fc83a1e811e0" />
+<img width="779" height="505" alt="image" src="https://github.com/user-attachments/assets/4f01430f-0377-4a4c-9e00-a16c6ac4f8b4" />
+
 #### ■ Lv.3 : 선택 일정 수정
 - 일정 제목, 작성자명 만 수정 가능
 - 수정 요청 시, 비밀번호 함께 전달
 - 작성일은 변경할 수 없으며, 수정일은 수정 완료 시, 수정한 시점으로 변경
 - API 응답에 비밀번호 제외
+  <img width="827" height="636" alt="image" src="https://github.com/user-attachments/assets/92fad543-fd5a-4afd-8cf9-1b1635937708" />
+
 #### ■ Lv.4 : 선택 일정 삭제
 - 삭제 요청 시, 비밀번호 함께 전달
+<img width="854" height="687" alt="image" src="https://github.com/user-attachments/assets/128eebe8-cae4-4573-a92a-18304d78a035" />
